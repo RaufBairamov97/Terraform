@@ -11,11 +11,12 @@ terraform {
 /*provider "aws" {
   region = "us-east-1"
 }*/
-
+#AWS provider
 provider "aws" {
   region     = "us-west-2"
 
 }
+
 
 
 resource "aws_instance" "ec2-instanceRauf" {
