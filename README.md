@@ -66,3 +66,44 @@ I investigated the issue layer by layer:
 ![img.png](img.png)
 
 ![img_1.png](img_1.png)
+
+
+# Terraform AWS EC2 Web Server with Templatefile
+
+## Overview
+
+This project demonstrates how to use **Terraform** to provision an Amazon EC2 web server on AWS and automatically configure it using a **template file**.
+
+The project uses Terraform's `templatefile()` function to pass variables and a list of names into a Bash user-data script. The script installs Apache HTTP Server and dynamically generates an HTML webpage during EC2 instance initialization.
+
+## Technologies Used
+
+- Terraform
+- AWS
+- Amazon EC2
+- AWS Security Groups
+- Amazon Linux 2023
+- Apache HTTP Server
+- Bash
+- Git
+- GitHub
+
+## Project Architecture
+
+```text
+                    Terraform
+                        |
+                        v
+                 templatefile()
+                        |
+                        v
+                user_data.sh.tpl
+                        |
+                        v
+                  EC2 Instance
+                        |
+                        v
+                  Apache HTTPD
+                        |
+                        v
+                  HTML Web Page
