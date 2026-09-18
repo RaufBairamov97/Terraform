@@ -8,7 +8,7 @@ terraform {
 }
 
 
-#AWS provider
+#AWS provider you have to go IAM
 /*provider "aws" {
   region     = "us-west-2"
 }*/
